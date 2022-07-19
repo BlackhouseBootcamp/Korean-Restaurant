@@ -1,0 +1,74 @@
+.textStrokeNormal
+{
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: black;
+}
+.textStrokeXl
+{
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+}
+.textStroke2Xl
+{
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+.textStroke2XlWhite
+{
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+}
+.textStroke3Xl
+{
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: black;
+}
+.textShadowSmall
+{
+    text-shadow: 1px 2px rgb(0, 0, 0);
+}
+.textShadowNormal
+{
+    text-shadow: 2px 4px rgb(0, 0, 0);
+}
+.textShadowXl
+{
+    text-shadow: 4px 5px rgb(125, 125, 125);
+}
+.textShadowXlFar
+{
+    text-shadow: 4px 10px rgb(125, 125, 125);
+}
+.fontAllCapsAlegreya
+{
+    font-family: 'Alegreya SC', serif; 
+    font-family: 'Koulen', cursive; 
+}
+.textStroke3XlResponsive
+{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.textShadowXlFarResponsive
+{
+    text-shadow: 2px 4px rgb(125, 125, 125);
+}
+
+
+/* Media Query Medium */
+
+@media only screen and (min-width: 768px) {
+    .verticalTextFormat
+    {
+        writing-mode: vertical-rl;
+    }
+    .textStroke3XlResponsive
+    {
+        -webkit-text-stroke-width: 4px;
+         -webkit-text-stroke-color: black;
+    }
+    .textShadowXlFarResponsive
+    {
+    text-shadow: 4px 10px rgb(125, 125, 125);
+    }
+  }
