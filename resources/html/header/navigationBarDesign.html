@@ -1,47 +1,44 @@
-   <div class="relative pt-5 container mx-auto ">
-        <div class="flex align-center justify-between text-xl " style="font-family: 'Alegreya SC', serif;">
-            <div class="md:w-1/12 w-1/4 ml-5">
-                 <!-- Logo -->
-                <img src="/koreanRestaurantsSmartSite/resources/multimedia/logo/blackhouseKoreanRestaurantLandscapeLogoPng.png" alt="" class=""/>
-            </div>
-             <!-- Links when in Desktop View -->
-            <div class="hidden md:block">
-                <ul class="">
-                    <li class="space-x-6 text-white">
-                        <a href="/koreanRestaurantsSmartSite/index.html">Home</a>
-                        <a href="/koreanRestaurantsSmartSite/resources/html/koreanRestaurantMenu.html">Menus</a>
-                        <a href="/koreanRestaurantsSmartSite/resources/html/koreanRestaurantGallery.html">Gallery</a>
-                        <a href="">Reservation</a>
-                        <a href="" class="">Locations</a>
-                    </li>
-                </ul>
-            </div>
-             <!-- Contact Us Button -->
-            <div class="text-white border border-1 px-2 py-1 hidden md:block">
-                <a href="">Contact Us</a>
-            </div>
-             <!-- Hamburger Design -->
-            <button id="menu-btn" class="block hamburger md:hidden focus:outline-none text-primaryText mr-8 mt-3" onclick="openHamburger()">
-                    <span class="hamburger-top text-primaryText"></span>
-                    <span class="hamburger-middle text-primaryText"></span>
-                    <span class="hamburger-bottom text-primaryText"></span>
-            </button>  
+<div class="relative pt-5 container mx-auto">
+    <div class="flex align-center justify-between text-xl" style="font-family: 'Alegreya SC', serif">
+        <div class="md:w-1/12 w-1/4 ml-5">
+            <!-- Logo -->
+            <a href="/index.html"><img src="/resources/multimedia/logo/blackhouseKoreanRestaurantLandscapeLogoPng.png" alt="" class="" /></a>
+        </div>
+        <!-- Links when in Desktop View -->
+        <div class="hidden md:block">
+            <ul class="">
+                <li class="space-x-6 text-white">
+                    <a href="/index.html">Home</a>
+                    <a href="/resources/html/menu.html">Menus</a>
+                    <a href="/resources/html/gallery.html">Gallery</a>
+                    <a href="/resources/html/reservation.html">Reservation</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Contact Us Button -->
+        <div class="text-white border border-1 px-2 py-1 hidden md:block md:mr-2">
+            <a href="/resources/html/contactUs.html">Contact Us</a>
+        </div>
+        <!-- Hamburger Design -->
+        <button id="menu-btn" class="block hamburger md:hidden focus:outline-none text-primaryText mr-8 mt-3" onclick="openHamburger()">
+            <span class="hamburger-top text-primaryText"></span>
+            <span class="hamburger-middle text-primaryText"></span>
+            <span class="hamburger-bottom text-primaryText"></span>
+        </button>
+    </div>
+</div>
+<!-- Links when in Mobile View -->
+<div class="md:hidden">
+    <div
+        id="menu"
+        class="z-20 absolute flex-col items-center self-end py-7 mt-8 hidden space-y-6 font-bold bg-black bg-opacity-50 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md text-white"
+    >
+        <a href="/index.html">Home</a>
+        <a href="/resources/html/menu.html">Menus</a>
+        <a href="/resources/html/gallery.html">Gallery</a>
+        <a href="/resources/html/reservation.html">Reservation</a>
+        <div class="text-white border border-1 px-2 py-1">
+            <a href="/resources/html/contactUs.html">Contact Us</a>
         </div>
     </div>
-     <!-- Links when in Mobile View -->
-    <div class="md:hidden">
-        <div id="menu" class=" z-20 absolute flex-col items-center self-end py-7 mt-8 hidden space-y-6 font-bold bg-black bg-opacity-50 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md text-white">
-            <a href="">Home</a>
-            <a href="">Menus</a>
-            <a href="">Gallery</a>
-            <a href="">Reservation</a>
-            <a href="" class="">Locations</a>
-            <div class="text-white border border-1 px-2 py-1">
-                <a href="">Contact Us</a>
-            </div>
-        </div>
-    </div>
-
-
-   
-    
+</div>
