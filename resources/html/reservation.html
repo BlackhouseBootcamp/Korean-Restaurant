@@ -17,39 +17,98 @@
         <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&family=Anton&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&family=Koulen&display=swap" rel="stylesheet" />
     </head>
-    <body>
+    <body class="bg-[url('/resources/multimedia/pictures/wallpaperForMenuPageKoreanRestaurantEdited.jpg')] bg-cover">
         <nav class="w-full pb-5 bg-black bg-opacity-50 shadow-inner-2xl shadow-black z-20 navigationBar"></nav>
         <section class="p-5">
             <h1 class="lg:text-6xl sm:text-3xl md:text-4xl text-white text-center textStroke2Xl font-bold textShadowNormal">
                 Make your own reservation now!
             </h1>
         </section>
-        <div class="flex justify-center lg:p-5">
-            <div class="bg-black bg-opacity-50 shadow-black sm:w-[600px] xs:w-64 flex justify-center rounded-md text-white">
-                <div class="flex-col xs:py-2 md:py-5 lg:py-10">
-                    <div class="lg:pb-5 md:pb-3 sm:pb-2 xs:pb-2">
-                        <div>Full name:</div>
-                        <input type="text" class="text-black w-64" />
+        <div class="flex justify-center lg:p-5 ">
+            <div class="">
+                <fieldset class="bg-black bg-opacity-50 shadow-black md:w-[800px] w-full p-5 md:p-2 flex justify-center rounded-md text-white">
+                <legend class="text-white ml-9 md:ml-12 text-3xl textStrokeXl fontAllCapsAlegreya">Reserve a Table:</legend>
+                <div class="flex-col xs:py-2 md:py-5 lg:py-10 textStrokeNormal">
+                    <div class="lg:pb-5 md:pb-3 sm:pb-2 xs:pb-2 md:flex md:space-x-4">
+                        <div>  
+                            <fieldset>
+                                <legend class="fontAllCapsAlegreya">First Name: </legend>
+                                <input type="text" class="text-black w-64" />
+                            </fieldset>
+                        </div>
+                        <div> 
+                            <fieldset>
+                                <legend class="fontAllCapsAlegreya">Last Name: </legend>
+                                <input type="text" class="text-black w-64" />
+                            </fieldset> 
+                        </div>
                     </div>
                     <div class="lg:pb-5 md:pb-3 sm:pb-2 xs:pb-2">
-                        <div>Email:</div>
-                        <input type="text" class="text-black w-64" />
+                        <div>
+                            <fieldset>
+                                <legend class="fontAllCapsAlegreya">Email Address: </legend>
+                                <input type="email" class="text-black w-64" />
+                            </fieldset> 
+                        </div>
                     </div>
                     <div class="lg:pb-5 md:pb-3 sm:pb-2 xs:pb-2">
-                        <div>Contact Number:</div>
-                        <input type="text" class="text-black w-64" />
+                        <div>
+                            <fieldset >
+                                <legend class="fontAllCapsAlegreya">Venue:</legend>
+                                <input type="text" class="text-black w-64" />
+                            </fieldset> 
+                        </div>
                     </div>
-                    <div class="lg:pb-5 md:pb-3 sm:pb-2 xs:pb-2">
-                        <div>Date:</div>
-                        <input type="date" class="text-black w-64" />
+                    <div class="lg:pb-5 md:pb-3 sm:pb-2 xs:pb-2 md:flex md:space-x-4">
+                        <div>
+                            <fieldset>
+                                <legend class="fontAllCapsAlegreya">Phone</legend>
+                                <input type="text" class="text-black w-64" />
+                            </fieldset> 
+                        </div>
+                        <div>
+                            <fieldset>
+                                <legend class="fontAllCapsAlegreya">Mobile</legend>
+                                <input type="text" class="text-black w-64" />
+                            </fieldset> 
+                        </div>
                     </div>
-                    <div class="lg:pb-5 md:pb-3 sm:pb-2 xs:pb-2">
-                        <button type="submit" class="rounded-lg bg-white text-black w-64">Reserve</button>
+                    <div class="lg:pb-5 md:pb-3 sm:pb-2 xs:pb-2 md:flex md:space-x-4">
+                        <div>
+                            <fieldset>
+                                <legend class="fontAllCapsAlegreya">Event Date:</legend>
+                                <input type="date" class="text-black w-64" />
+                            </fieldset> 
+                        </div>
+                        <div>
+                            <fieldset>
+                                <legend class="fontAllCapsAlegreya">Pax:</legend>
+                                <input type="number" class="text-black w-64" max="15" min="0" />
+                            </fieldset> 
+                        </div>
+                    </div>
+                    <div class="lg:pb-5 md:pb-3 sm:pb-2 xs:pb-2 md:flex md:space-x-4">
+                        <div>
+                            <fieldset>
+                                <legend class="fontAllCapsAlegreya">Start Time: </legend>
+                                <input type="time" class="text-black w-32" />
+                            </fieldset> 
+                        </div>
+                        <div>
+                            <fieldset>
+                                <legend class="fontAllCapsAlegreya">End Time:</legend>
+                                <input type="time" class="text-black w-32" />
+                            </fieldset> 
+                        </div>
+                    </div>
+                    <div class="lg:pb-5 md:pb-3 sm:pb-2 pt-12 xs:pb-2">
+                        <button type="submit" class="rounded-lg py-4 bg-white hover:bg-black text-white w-full textStrokeXl text-2xl fontAllCapsAlegreya">Reserve</button>
                     </div>
                 </div>
+                </fieldset> 
             </div>
         </div>
-        <footer class="relative py-6 bg-black z-20 bg-opacity-50 shadow-inner-2xl shadow-black footerBar"></footer>
+        <footer class=" mt-24 w-full py-6 bg-black z-20 bg-opacity-50 shadow-inner-2xl shadow-black footerBar"></footer>
     </body>
     <script src="/resources/javascript/hamburgerResponsiveMenu.js"></script>
     <script src="/resources/javascript/importIndexDesignNavigationBar.js"></script>
