@@ -17,24 +17,25 @@
         <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&family=Anton&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&family=Koulen&display=swap" rel="stylesheet" />
     </head>
-    <body class="bg-[url('/resources/multimedia/pictures/wallpaperForMenuPageKoreanRestaurantEdited.jpg')] bg-cover">
+    <body style="background-image: url('../multimedia/pictures/wallpaperForMenuPageKoreanRestaurantEdited.jpg'); background-size: cover" class="">
         <nav class="fixed w-full pb-5 bg-black bg-opacity-50 shadow-inner-2xl shadow-black z-20 navigationBar"></nav>
         <section class="pt-24">
-            <h1 class="text-6xl text-white text-center textStroke2Xl font-bold textShadowNormal">Our Menu</h1>
             <div class="container mx-auto fontAllCapsAlegreya space-y-4 pt-12">
                 <!-- First Section -->
                 <div class="md:flex pl-3 md:pl-0 justify-center md:space-x-4 md:space-y-0 space-y-4 md:py-12 textStrokeNormal">
-                    <div class="rounded-lg shadow-lg max-w-sm bg-black bg-opacity-50 text-white">
-                        <img class="rounded-t-lg border-b-4" src="/resources/multimedia/pictures/bestSellingKoreanFoodEdited.jpg" alt="" />
-                        <div class="p-6">
-                            <h5 class="text-xl font-medium mb-2">Jangeo Tang</h5>
-                            <p class="text-base mb-4">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas nihil odio omnis distinctio tempore pariatur,
-                                voluptatem delectus quae a amet, alias mollitia molestias, minus ab aspernatur eligendi? Architecto, magni eum.
-                            </p>
-                            <h5 class="text-xl font-medium mb-2">$8.99</h5>
+                    <a href="" class="text-base">
+                        <div class="rounded-lg shadow-lg max-w-sm bg-black bg-opacity-50 text-white" id="menuAdd">
+                            <img class="rounded-t-lg border-b-4" src="/resources/multimedia/pictures/bestSellingKoreanFoodEdited.jpg" alt="" />
+                            <div class="p-6">
+                                <h5 class="text-xl font-medium mb-2">Click Here To Add an Item</h5>
+                                <p class="text-base mb-4">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas nihil odio omnis distinctio tempore pariatur,
+                                    voluptatem delectus quae a amet, alias mollitia molestias, minus ab aspernatur eligendi? Architecto, magni eum.
+                                </p>
+                                <h5 class="text-xl font-medium mb-2">$8.99</h5>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                     <div class="rounded-lg shadow-lg max-w-sm bg-black bg-opacity-50 text-white">
                         <img class="rounded-t-lg border-b-4" src="/resources/multimedia/pictures/bestSellingKoreanFoodEdited.jpg" alt="" />
                         <div class="p-6">
@@ -135,6 +136,6 @@
         <footer class="relative py-6 bg-black z-20 bg-opacity-50 shadow-inner-2xl shadow-black footerBar"></footer>
     </body>
     <script src="/resources/javascript/hamburgerResponsiveMenu.js"></script>
-    <script src="/resources/javascript/importIndexDesignNavigationBar.js"></script>
-    <script src="/resources/javascript/importIndexDesignFooterBar.js"></script>
+    <script src="/admin/resources/javascript/importNavBar.js"></script>
+    <script src="/admin/resources/javascript/importFooter.js"></script>
 </html>
