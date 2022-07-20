@@ -16,9 +16,37 @@
 		<link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&display=swap" rel="stylesheet" />
 		<link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&family=Anton&display=swap" rel="stylesheet" />
 		<link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&family=Koulen&display=swap" rel="stylesheet" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	</head>
 	<body class="bg-[url('/resources/multimedia/pictures/wallpaperForMenuPageKoreanRestaurantEdited.jpg')] bg-cover">
 		<nav class="w-full pb-5 bg-black bg-opacity-50 shadow-inner-2xl shadow-black z-20 navigationBar"></nav>
+
+		<!--modal content-->
+		<div class="fixed hidden inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full" id="optionsModal">
+			<div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
+				<div class="mt-3 text-center">
+					<div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100">
+						<svg class="h-6 w-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+						</svg>
+					</div>
+					<h3 class="text-lg leading-6 font-medium text-gray-900" id="lblStatus"></h3>
+					<div class="mt-2 px-7 py-3">
+						<p class="text-sm text-gray-500" id="lblMessage"></p>
+					</div>
+					<div class="items-center px-4 py-3">
+						<button
+							id="bntModalOk"
+							class="px-4 py-2 bg-green-500 text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-300"
+							type="button"
+						>
+							OK
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<section class="p-5">
 			<h1 class="lg:text-6xl sm:text-3xl md:text-4xl text-white text-center textStroke2Xl font-bold textShadowNormal">
 				Make your own reservation now!
@@ -26,7 +54,10 @@
 		</section>
 		<div class="flex justify-center lg:p-5">
 			<div class="">
-				<fieldset class="bg-black bg-opacity-50 shadow-black md:w-[800px] w-full p-5 md:p-2 flex justify-center rounded-md text-white">
+				<fieldset
+					class="bg-black bg-opacity-50 shadow-black md:w-[800px] w-full p-5 md:p-2 flex justify-center rounded-md text-white"
+					id="fieldReservation"
+				>
 					<legend class="text-white ml-9 md:ml-12 text-3xl textStrokeXl fontAllCapsAlegreya">Reserve a Table:</legend>
 					<div class="flex-col xs:py-2 md:py-5 lg:py-10 textStrokeNormal">
 						<div class="lg:pb-5 md:pb-3 sm:pb-2 xs:pb-2 md:flex md:space-x-4">
